@@ -2,13 +2,7 @@
 
 Promotes code reusability through inheritance. Improves code maintainability and scalability. Provides data security through encapsulation. Models real-world entities using classes and objects.
 
-class
-object
-encapsulatio
-Abstraction
-Polymerphis
-Inheretanc
-=============================================
+==============================
 
 Access Modifers
 obj / class
@@ -34,6 +28,16 @@ To give flexibility when creating objects
 To set default or custom values
 To reduce repetitive code
 #####################
-![OOP(CPP)](Constractortypes.webp)
 ![OOP(CPP)](Princples.webp)
+![OOP(CPP)](Constractortypes.webp)
+![OOP(CPP)](AccessModifier.png)
 ======================================  
+
+Access Specifiers or access modifier
+Access specifiers control how the members (attributes and methods) of a class can be accessed.
+
+They help protect data and organize code so that only the right parts can be seen or changed
+
+public - members are accessible from outside the class
+private - members cannot be accessed (or viewed) from outside the class
+protected - members cannot be accessed from outside the class, however, they can be accessed in inherited classes
