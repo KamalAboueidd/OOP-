@@ -1,0 +1,168 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+//   class Rectangle
+//  {
+//      private:
+//      float length;
+//      float width;
+//      public:
+//      void setLen(float len)
+//      {
+//         if(len >= 0)
+//         {
+//       length = len;
+//         }
+//       else{
+//         cout << "Error , Please Enter Positive value";
+//      }
+//      }
+//      float getLength()
+//      {
+//           return length;
+//      }
+//       //width methods 
+//         void setWidth(float wid)
+//      {
+//         if(wid >= 0)
+//         {
+//       width = wid;
+//         }
+//       else{
+//         cout << "Error , Please Enter Positive value" << "\n";
+//      }
+//      }
+//      float getWidth()
+//      {
+//           return width;
+//      }
+//       float calcArea()
+//       {
+//               return length  * width ;
+            
+//       }
+     
+//  };
+  class Car 
+  {
+       private:
+           string model;
+           int year ;
+           string color;
+       
+       public :
+        //  Car() // constractor ==> 
+         // A constructor is a special method that is automatically called when an object of a class is created
+          //The constructor has the same name as the class.
+          // It has no return type (not even void).
+          // It is usually declared public.
+          // It is automatically called when an object is created.
+        //  {
+        //       model = "Honda";
+        //       year = 2025;
+        //       color = "white";
+        //       cout <<" mastraadd";
+              
+        //  }
+        // constractor with initialization list ==> fastst than basic way .
+        //   Car(); model("honda"),year(2020),color("white")
+        //   {
+              
+        //   } 
+          // defualt constarctor Car(); empty body , no parameters .
+         // constractor with parameter 
+          Car(string md , int ye , string col):model("Toiota"),year(2028),color("Red") 
+          { // if  i not write andthing in the body of the constractor will be take value of the default intialized constractor
+               model = md ;
+              year =ye;
+              color=col;
+               cout << "done" << "\n";
+          }
+          // Destructor : special method this is automitically called when an object life time is endd
+          // like constarctor , destructor do not have return value
+          // the most comman use of destructor to deallocate memory that was allcoated for the object by the constractor
+          // if you want execute somthing after object life time ended use destructor 
+           
+        //   ~Car() // Destrcutor
+        //   {
+        //       cout << "The Object LifeTime ended" << "\n";
+        //   }
+        
+        // Constructor Defined Outside the Class
+        //  You can also define the constructor outside the class using the scope resolution operator ::
+        
+            // ex on  constractor outside the class 
+//========================================================================================================================
+           class Car {        // The class
+  public:          // Access specifier
+    string brand;  // Attribute
+    string model;  // Attribute
+    int year;      // Attribute
+    Car(string x, string y, int z); // Constructor declaration
+};
+
+// Constructor definition outside the class
+Car::Car(string x, string y, int z) {
+  brand = x;
+  model = y;
+  year = z;
+}
+
+int main() {
+  // Create Car objects and call the constructor with different values
+  Car carObj1("BMW", "X5", 1999);
+  Car carObj2("Ford", "Mustang", 1969);
+
+  // Print values
+  cout << carObj1.brand << " " << carObj1.model << " " << carObj1.year << "\n";
+  cout << carObj2.brand << " " << carObj2.model << " " << carObj2.year << "\n";
+  return 0;
+}
+//==========================================================================================================================
+        
+       void setModel(string md)
+       {
+            model = md ;
+       }
+       string getModel()
+       {
+           return model ;    
+       }
+       void setYear(int ye)
+       {
+            year = ye ;
+       }
+       int getYear()
+       {
+           return year ;    
+       }
+           void setColor(string col)
+       {
+            color = col ;
+       }
+       string getColor()
+       {
+           return color ;    
+       }
+        void print() {
+ cout << "The cor model is " << model << " and the year of generation is " << year<< " , color of the car is "<< color <<"\n";                }
+  };
+
+int main() {
+    // Write C++ code here
+    // Rectangle r1;
+    //  r1.setLen(2.2);
+    //     r1.setWidth(11);
+    //     cout << "the clculatiob area is " << r1.calcArea() << "\n";
+    //   Car c1;
+    //  createing objects with class have and parameter constractor 
+      Car c1("nissan",2010,"blue");
+      Car c2("fiat",2040,"red");
+    //   c1.setModel("BMW");
+    //   c1.setYear(2026);
+    //   c1.setColor("Black");
+     c1.print();
+     c2.print();
+    
+     return 0 ;
+}
