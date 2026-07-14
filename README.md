@@ -28,6 +28,7 @@ To reduce repetitive code
 ![OOP(CPP)](Princples.webp)
 ![OOP(CPP)](Constractortypes.webp)
 ![OOP(CPP)](AccessModifier.png)
+![OOP(CPP)](OverloadOperators.png)
 ======================================  
 
 Access Specifiers or access modifier
@@ -46,5 +47,25 @@ protected - members cannot be accessed from outside the class, however, they can
  - no need to create spcial constractor of this; one is already built into classes 
 
  passing objs as an Arguments .
+
+
+ static class member 
+ - Static data members are class members declared using the static keyword. 
+ Unlike non-static members, a static data member belongs to the class itself, not to individual objects
   
+  - A static dta items is usful when all objs of the same class must share a comman information .
+  - its lifetime is entire program . It continues to exist even if there are no objs of the classs
+  - to invoke a static method or static filed , use the class name , rather than the instance name .
+
+  Static Methods are convenient () because they may be called at the class level.
+   they are tipically used to create utility classes .
+   Static methods may not communicate with instance fileds , only static filed .  
+     == (static method can be called without creating an object of the class).
+# :: ==> Scope operator .
+
+
+// Operator Overlaoding 
+ // 
+
+
  
