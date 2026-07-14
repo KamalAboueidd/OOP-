@@ -4,9 +4,6 @@ Promotes code reusability through inheritance. Improves code maintainability and
 
 ==============================
 
-Access Modifers
-obj / class
-class methods
  
  `- Constructors
 A constructor is a special method that is automatically called when an object of a class is created.
@@ -41,3 +38,13 @@ They help protect data and organize code so that only the right parts can be see
 public - members are accessible from outside the class
 private - members cannot be accessed (or viewed) from outside the class
 protected - members cannot be accessed from outside the class, however, they can be accessed in inherited classes
+
+
+ default copy constractor 
+ - another way to intialize an object : 
+ - initialze obj with another obj off the same type
+ - no need to create spcial constractor of this; one is already built into classes 
+
+ passing objs as an Arguments .
+  
+ 
