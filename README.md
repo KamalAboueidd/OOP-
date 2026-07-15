@@ -76,4 +76,6 @@ To inherit from a class, use the : symbol.
 
 In the example below, the Car class (child) inherits the attributes and methods from the Vehicle class (parent):
 
- 
+![OOP(CPP)](inheretancepng.png)
+![OOP(CPP)](Inhertance2.png)
+  
