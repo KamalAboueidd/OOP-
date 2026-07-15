@@ -64,8 +64,16 @@ protected - members cannot be accessed from outside the class, however, they can
 # :: ==> Scope operator .
 
 
-// Operator Overlaoding 
- // 
+// what is Inheretance ?
+ 
+Inheritance allows one class to reuse attributes and methods from another class. It helps you write cleaner, more efficient code by avoiding duplication.
 
+We group the "inheritance concept" into two categories:
+
+derived class (child) - the class that inherits from another class
+base class (parent) - the class being inherited from
+To inherit from a class, use the : symbol.
+
+In the example below, the Car class (child) inherits the attributes and methods from the Vehicle class (parent):
 
  
