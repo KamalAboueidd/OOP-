@@ -47,7 +47,14 @@ class Student:public Person  // class studnt is a person ,  and ihert all featur
           string department;
          public :
           Student(){}
-          Student(int l , float g , string d):level(l),Gpa(g),department(d){}
+          Student(string n , string g , float a ,int l , float gp , string d):Person(n ,g ,a)
+           {
+               level = l ;
+               Gpa = gp;
+               department = d;
+          }
+            
+           
          void setLevel(int l)
          {
            level = l;
@@ -72,19 +79,24 @@ class Student:public Person  // class studnt is a person ,  and ihert all featur
       {
       return department ;
       }
+      void display()
+      {
+         cout << "Level : " << level << " GPA : " << Gpa << " Departement : " << department << "\n";
+      }
    };
  int main ()
  {
     // Person p1("ahmed","male" ,22.1); 
-    Student s1;
-    s1.printDetails();
-    s1.setAge(22);
-    s1.setname("OMAR");
-    s1.setGender("MALE");
-    s1.printDetails();      
-    s1.setLevel(121);
-     cout << s1.getLevel() << " ... \n";
-     
+    // Student s1;
+    // s1.printDetails(;
+    // s1.setAge(22);
+    // s1.setname("OMAR");
+    // s1.setGender("MALE");
+    // s1.printDetails();      
+    // s1.setLevel(121);
+    //  cout << s1.getLevel() << " ... \n";
+      Student s1("Omar","Male",22.2 ,3,3.22,"IS");
+      s1.display();
      
      return 0;
  }
