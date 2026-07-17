@@ -79,3 +79,8 @@ In the example below, the Car class (child) inherits the attributes and methods 
 ![OOP(CPP)](inheretancepng.png)
 ![OOP(CPP)](Inhertance2.png)
   
+
+ #  Calling base class constractor
+
+![OOP(CPP)](cllingBaseConstractor.jpeg)
+
