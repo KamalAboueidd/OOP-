@@ -12,7 +12,9 @@
        string name ="Unknown" ;
      string gender ="Unknown";
         float age = 0 ;
-        Person(){}
+        Person(){
+          cout << "value from base class " << " \n";
+        }
         Person(string n , string g , float a):name(n),gender(g),age(a){}
          void setname(string  n)
          {  
@@ -46,7 +48,9 @@ class Student:public Person  // class studnt is a person ,  and ihert all featur
           float Gpa ;
           string department;
          public :
-          Student(){}
+          Student(){
+            cout << "Value fom child or drived class" << "\n";
+          }
           Student(string n , string g , float a ,int l , float gp , string d):Person(n ,g ,a)
            {
                level = l ;
@@ -79,25 +83,47 @@ class Student:public Person  // class studnt is a person ,  and ihert all featur
       {
       return department ;
       }
-      void display()
-      {
-         cout << "Level : " << level << " GPA : " << Gpa << " Departement : " << department << "\n";
-      }
+       void printDetails() // overriding 
+       {
+         Person::printDetails();
+          cout << "LEVEL : "<< level << " GPA : " << Gpa << " Department : " << department << "\n";
+       }
    };
+     class PostGraduatedStudent:public Student 
+     {
+       private :
+       string research_interest ;
+
+       public : 
+         PostGraduatedStudent()
+         {
+           cout << "defualt constractor of PostGraducatedStudent" << "\n";
+         }
+         PostGraduatedStudent(string n , string g , float a ,int l , float gp , string d ,string re):Student(n,g,a,l,gp,d){
+             research_interest = re ;
+         }
+         void set_research_interest(string rarea)
+         {
+          research_interest = rarea ;
+         }
+         string get_Research_interest()
+         { 
+            return research_interest ;
+         }
+         void printDetails()
+         {
+          Student::printDetails();
+          cout << " Research interest  : " << research_interest  << "\n";
+         }
+     };
  int main ()
  {
-    // Person p1("ahmed","male" ,22.1); 
-    // Student s1;
-    // s1.printDetails(;
-    // s1.setAge(22);
-    // s1.setname("OMAR");
-    // s1.setGender("MALE");
-    // s1.printDetails();      
-    // s1.setLevel(121);
-    //  cout << s1.getLevel() << " ... \n";
-      Student s1("Omar","Male",22.2 ,3,3.22,"IS");
-      s1.display();
-     
+      // Student s1;
+      // Student s2("KAMAL" ,"MALE",21.10,4,3.22,"IT");
+      // s2.printDetails();
+      PostGraduatedStudent p1("Kamal","Male",22,5,3.22,"IT","JavaScript") ;
+      p1.printDetails();
+    
      return 0;
  }
 
