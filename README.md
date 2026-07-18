@@ -90,9 +90,13 @@ In the example below, the Car class (child) inherits the attributes and methods 
 ![OOP(CPP)](FunctionOverride.png)
 
 
-# function overloadingg
+# function overloadingg 
  can be in the same class and and diff classes
 ![OOP(CPP)](Overloading.png)
  
+
+ # Multiple inhertance 
+
+  
 
 
