@@ -96,6 +96,8 @@ In the example below, the Car class (child) inherits the attributes and methods 
  
 
  # Multiple inhertance 
+![OOP(CPP)](multipleInheretance.png)
+![OOP(CPP)](multipleInhertance.png)
 
   
 
