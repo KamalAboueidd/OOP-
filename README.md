@@ -99,6 +99,10 @@ In the example below, the Car class (child) inherits the attributes and methods 
 ![OOP(CPP)](multipleInheretance.png)
 ![OOP(CPP)](multipleInhertance.png)
 
+# Polymerphism
+   virtual keyworad  next to function name means ...this function will be overrided .
+![OOP(CPP)](polyee.png)
+![OOP(CPP)](plyeeTypes.png)
   
 
 
