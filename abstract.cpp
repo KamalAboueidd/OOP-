@@ -2,22 +2,17 @@
 using namespace std ;
   class Shape
   {
-     private : 
+      
 
       string color ;
       public :
       Shape(string c):color(c){}
-      virtual int area ()
+      virtual int area () = 0 ;
+      virtual void draw () =0 ;
+      virtual void earse () = 0;
+      virtual void display () final
       {
-         cout << "Parent classs area : "<<"\n";
-         return 0 ;
-      }
-      virtual void draw (){
-         cout << " Draw Parent shape in "<< color <<" Color ." << "\n";
-      }
-      virtual void earse ()
-      {
-          cout<< "erase the parent shape" << "\n";
+        cout << "this is shape : " << "\n";
       }
   };
   class rectangle : public Shape 
@@ -40,10 +35,14 @@ private :
     {
          cout << "Draw Rectangle " << "\n";
     }
-    void erase ()
+    void earse ()
     {
         cout << "The Rectangle Earased " << "\n";
     }
+    // void display()          // xxxxxxxxx cannot ooverrid final function .
+    // {
+    //      cout << "hhhhhhh" << "\n";
+    // }
   };
   class Circle :public  Shape
   {
@@ -63,7 +62,7 @@ private :
        {
          cout << "Draw Circle . " << "\n";
        }
-       void erase ()
+       void earse ()
        {
          cout << "The circle Earased . " << "\n";
        }

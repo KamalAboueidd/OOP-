@@ -104,5 +104,9 @@ In the example below, the Car class (child) inherits the attributes and methods 
 ![OOP(CPP)](polyee.png)
 ![OOP(CPP)](plyeeTypes.png)
   
+# 
+![OOP(CPP)](ABSTRACT.png)
+![OOP(CPP)](Pure.png)
 
-
+ # final classsifier
+ A final method in an abstract class cannot be overridden by any subclass, meaning its implementation is locked and final. Because it cannot be overridden, a final method can never be a pure virtual (abstract) method, which strictly requires subclasses to implement it.
