@@ -104,7 +104,7 @@ In the example below, the Car class (child) inherits the attributes and methods 
 ![OOP(CPP)](polyee.png)
 ![OOP(CPP)](plyeeTypes.png)
   
-# 
+# abstract 
 ![OOP(CPP)](ABSTRACT.png)
 ![OOP(CPP)](Pure.png)
 
